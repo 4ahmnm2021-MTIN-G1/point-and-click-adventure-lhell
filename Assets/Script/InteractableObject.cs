@@ -6,7 +6,10 @@ using UnityEngine.UI;
 public class InteractableObject : MonoBehaviour
 {
     public GameObject commandMenu;
-    public UI_Manager uiManager;
+    public Transform reposition;
+    public UI_Manager UI_Manager;
+    public Text dialogFenster;
+    public string inspectText;
     
     //Erster Frame des Objektes in der Szene
     public void start()
@@ -25,6 +28,8 @@ public class InteractableObject : MonoBehaviour
         command.Menu.active = true;
         commandMenu.transform.position = transform.position;
 
-        uiManager.activeIO = this;
+        dialogFenster.text = inspectText;
+    
+        UI_Manager.activeIO = this;
     }
 }
