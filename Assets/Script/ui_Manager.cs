@@ -3,7 +3,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UI_Manager : MonoBehaviour
+public class ui_Manager : MonoBehaviour
 {
-    public InteractableObject x;
+    public InteractableObject activeIO;
+    // public bool activeIO;
+    public Text dialogFenster;
+
+    public void DisplayText()
+    {
+        dialogFenster.text = activeIO.inspectText;
+    }
+
+    public void CollectItem()
+    {
+        Debug.Log("Collect Item Funktion ist aufgerufen");
+    }
+
+    public void DontDisplayText()
+    {
+        dialogFenster.text = "";
+    }
 }
