@@ -9,6 +9,9 @@ public class InteractableObject : MonoBehaviour
     public ui_Manager ui_Manager;
     public Text dialogFenster;
     public string inspectText;
+    public SpriteRenderer sr;
+    public Image img;
+
     
     //Erster Frame des Objektes in der Szene
     public void Start()
@@ -30,5 +33,6 @@ public class InteractableObject : MonoBehaviour
         //dialogFenster.text = inspectText;
     
         ui_Manager.activeIO = this;
+
     }
 }

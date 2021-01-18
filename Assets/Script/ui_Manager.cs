@@ -17,6 +17,9 @@ public class ui_Manager : MonoBehaviour
     public void CollectItem()
     {
         Debug.Log("Collect Item Funktion ist aufgerufen");
+
+        activeIO.img.sprite = activeIO.sr.sprite;
+
     }
 
     public void DontDisplayText()
