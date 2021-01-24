@@ -4182,8 +4182,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1533081981}
   - component: {fileID: 1533081980}
-  - component: {fileID: 1533081979}
   - component: {fileID: 1533081978}
+  - component: {fileID: 1533081979}
   m_Layer: 0
   m_Name: Stromaksten
   m_TagString: Untagged
@@ -4225,7 +4225,8 @@ MonoBehaviour:
         m_MethodName: set_sprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 21300000, guid: 224428dc9bb6e4b5d99dbe23dde52332,
+            type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -4255,8 +4256,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!60 &1533081979
-PolygonCollider2D:
+--- !u!61 &1533081979
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -4278,14 +4279,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -1.685, y: 1.0649999}
-      - {x: -1.785, y: 0.98499995}
-      - {x: -1.785, y: -1.0649999}
-      - {x: 1.745, y: -1.0649999}
-      - {x: 1.785, y: -0.92499995}
-      - {x: 1.785, y: 1.0649999}
+  serializedVersion: 2
+  m_Size: {x: 3.57, y: 2.13}
+  m_EdgeRadius: 0
 --- !u!212 &1533081980
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6179,7 +6175,8 @@ MonoBehaviour:
         m_MethodName: set_sprite
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 21300000, guid: ad3df5fe82c5446f983ba48362b675ea,
+            type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
