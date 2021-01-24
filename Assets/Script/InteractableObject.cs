@@ -2,16 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Events;
 
 public class InteractableObject : MonoBehaviour
 {
     public GameObject commandMenu;
     public ui_Manager ui_Manager;
     public Text dialogFenster;
-    public string inspectText;
-    public SpriteRenderer sr;
-    public Image img;
+    
+    public bool condition;
+    public UnityEvent conditionMet;
+    public UnityEvent conditionNotMet;
 
+    public UnityEvent talk;
     
     //Erster Frame des Objektes in der Szene
     public void Start()
@@ -35,4 +38,21 @@ public class InteractableObject : MonoBehaviour
         ui_Manager.activeIO = this;
 
     }
+
+    public void Interact()
+    {
+        if (condition)
+        {
+            conditionMet.Invoke();
+        }
+        else 
+        {
+            conditionNotMet.Invoke();
+        }
+    }
+
+     public void SetCondition(bool value)
+        {
+            condition = value;
+        }
 }
