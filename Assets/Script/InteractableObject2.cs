@@ -7,7 +7,7 @@ using UnityEngine.Events;
 public class InteractableObject2 : MonoBehaviour
 {
     public GameObject commandMenu;
-    public ui_Manager ui_Manager;
+    public ui_Manager ui_Manager2;
     public Text dialogFenster;
     
     public bool condition;
@@ -17,19 +17,28 @@ public class InteractableObject2 : MonoBehaviour
 
     public UnityEvent talk;
     
+    //Erster Frame des Objektes in der Szene
+    public void Start()
+    {
+        commandMenu.active = false;
+    }
     
-    public void OnMouseDown2()
+    //Diese Funktion wird jeden Frame aufgerufen
+    public void Update()
+    {
+    
+    }
+    
+    public void OnMouseDown()
     {
         commandMenu.active = true;
         commandMenu.transform.position = transform.position;
-
-        //dialogFenster.text = inspectText;
     
-        //ui_Manager.activeIO = this;
+       // ui_Manager2.activeIO = this;
 
     }
 
-    public void Interact2()
+    public void Interact()
     {
         if (condition && condition2)
         {
@@ -45,7 +54,6 @@ public class InteractableObject2 : MonoBehaviour
         {
             condition = value;
         }
-
     public void SetCondition2(bool value)
         {
             condition2 = value;
