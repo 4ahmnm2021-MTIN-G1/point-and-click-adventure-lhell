@@ -955,7 +955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272943599}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.32, y: -4.62, z: 0}
+  m_LocalPosition: {x: -1.59, y: -1.32, z: 0}
   m_LocalScale: {x: 0.201, y: 0.201, z: 0.201}
   m_Children: []
   m_Father: {fileID: 0}
@@ -970,13 +970,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 272943599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f65865eaa1565407fab47c12443be2da, type: 3}
+  m_Script: {fileID: 11500000, guid: 8188716595787455283337a2f91175af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   commandMenu: {fileID: 1540176023}
   ui_Manager: {fileID: 846437749}
   dialogFenster: {fileID: 136630245}
   condition: 0
+  condition2: 0
   conditionMet:
     m_PersistentCalls:
       m_Calls: []
@@ -984,18 +985,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   conditionNotMet:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 136630245}
-        m_MethodName: set_text
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: "Hier w\xFCrd ich nicht rauskommen.."
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   talk:
@@ -1052,6 +1042,8 @@ GameObject:
   m_Component:
   - component: {fileID: 290666979}
   - component: {fileID: 290666978}
+  - component: {fileID: 290666981}
+  - component: {fileID: 290666980}
   m_Layer: 0
   m_Name: weiss
   m_TagString: Untagged
@@ -1121,6 +1113,118 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &290666980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290666977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f65865eaa1565407fab47c12443be2da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  commandMenu: {fileID: 1540176023}
+  ui_Manager: {fileID: 846437749}
+  dialogFenster: {fileID: 136630245}
+  condition: 0
+  conditionMet:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  conditionNotMet:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 136630245}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Glotz doch nicht so bl\xF6d!"
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1540176023}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 136630245}
+        m_MethodName: set_material
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Material, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 0
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  talk:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 136630245}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Irgendwie sieht er m\xFCde aus.."
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1540176023}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!61 &290666981
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290666977}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 30.699999, y: 30.699999}
+    newSize: {x: 30.699999, y: 30.699999}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 30.699999, y: 30.699999}
+  m_EdgeRadius: 0
 --- !u!1 &354745428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1329,7 +1433,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Lunchpakete schaden nie
+          m_StringArgument: Ein Lunchpaket schadet nie
           m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
@@ -2166,6 +2270,113 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521303761}
   m_CullTransparentMesh: 0
+--- !u!1 &604963582
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 604963583}
+  - component: {fileID: 604963586}
+  - component: {fileID: 604963584}
+  - component: {fileID: 604963585}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &604963583
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604963582}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 767217984}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.1, y: 6.875}
+  m_SizeDelta: {x: 829.5, y: 604.25}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!328 &604963584
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604963582}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: 14fc08bc1dc164127ba1b2cda770438b, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: f33ae2abe39564daab4119c4a5d3f13e, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 0
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 0
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+--- !u!114 &604963585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604963582}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &604963586
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604963582}
+  m_CullTransparentMesh: 0
 --- !u!1 &613996373
 GameObject:
   m_ObjectHideFlags: 0
@@ -2754,6 +2965,7 @@ RectTransform:
   - {fileID: 461091744}
   - {fileID: 1639545031}
   - {fileID: 1106363624}
+  - {fileID: 604963583}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2937,33 +3149,22 @@ MonoBehaviour:
   condition: 1
   conditionMet:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2090873579}
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   conditionNotMet:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2090873579}
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 604963585}
+        m_MethodName: set_enabled
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
@@ -4417,7 +4618,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1533081977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06, y: -1.67, z: 0}
+  m_LocalPosition: {x: 1.66, y: -1.67, z: 0}
   m_LocalScale: {x: 0.286, y: 0.286, z: 0.286}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5485,7 +5686,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1774207287}
   - component: {fileID: 1774207286}
-  - component: {fileID: 1774207289}
   - component: {fileID: 1774207288}
   - component: {fileID: 1774207290}
   m_Layer: 0
@@ -5580,111 +5780,59 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   conditionNotMet:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1639545032}
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21300000, guid: 2b1b976930c884eb5bad68d0a600e7ba,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1540176023}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 136630245}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: "Wof\xFCr ich das wohl brauchen kann?"
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   talk:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 136630245}
+        m_MethodName: set_text
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Da ist ja ein Seil!
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!60 &1774207289
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1774207285}
-  m_Enabled: 0
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.81, y: 4.51}
-    newSize: {x: 2.81, y: 4.51}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.655, y: -1.735}
-      - {x: 0.655, y: -1.2149999}
-      - {x: 0.705, y: -1.145}
-      - {x: 1.0749999, y: -1.0849999}
-      - {x: 1.255, y: -0.995}
-      - {x: 1.345, y: -0.895}
-      - {x: 1.405, y: -0.765}
-      - {x: 1.405, y: 0.225}
-      - {x: 1.375, y: 0.545}
-      - {x: 1.395, y: 0.635}
-      - {x: 1.385, y: 0.775}
-      - {x: 1.3249999, y: 0.905}
-      - {x: 1.255, y: 0.97499996}
-      - {x: 1.135, y: 1.0649999}
-      - {x: 0.875, y: 1.185}
-      - {x: 0.79499996, y: 1.2049999}
-      - {x: 0.865, y: 1.435}
-      - {x: 0.85499996, y: 1.615}
-      - {x: 0.815, y: 1.675}
-      - {x: 0.775, y: 1.745}
-      - {x: 0.645, y: 1.865}
-      - {x: 0.45499998, y: 1.895}
-      - {x: 0.315, y: 1.755}
-      - {x: 0.275, y: 1.785}
-      - {x: 0.24499999, y: 1.9549999}
-      - {x: 0.205, y: 2.085}
-      - {x: 0.095, y: 2.195}
-      - {x: -0.044999998, y: 2.205}
-      - {x: -0.21499999, y: 2.055}
-      - {x: -0.24499999, y: 2.125}
-      - {x: -0.42499998, y: 2.2549999}
-      - {x: -0.625, y: 2.2549999}
-      - {x: -0.715, y: 2.145}
-      - {x: -0.73499995, y: 2.055}
-      - {x: -0.755, y: 1.9749999}
-      - {x: -0.775, y: 1.8349999}
-      - {x: -0.78499997, y: 1.7049999}
-      - {x: -0.805, y: 1.175}
-      - {x: -0.875, y: 1.155}
-      - {x: -1.0749999, y: 1.095}
-      - {x: -1.255, y: 0.98499995}
-      - {x: -1.365, y: 0.875}
-      - {x: -1.405, y: 0.78499997}
-      - {x: -1.405, y: 0.21499999}
-      - {x: -1.375, y: 0.145}
-      - {x: -1.385, y: -0.005}
-      - {x: -1.385, y: -0.205}
-      - {x: -1.375, y: -0.385}
-      - {x: -1.375, y: -0.705}
-      - {x: -1.3349999, y: -0.815}
-      - {x: -1.135, y: -1.005}
-      - {x: -0.91499996, y: -1.105}
-      - {x: -0.745, y: -1.115}
-      - {x: -0.78499997, y: -1.4649999}
-      - {x: -0.79499996, y: -1.645}
-      - {x: -0.72499996, y: -1.865}
-      - {x: -0.575, y: -1.995}
-      - {x: -0.49499997, y: -2.0349998}
-      - {x: -0.355, y: -2.0349998}
-      - {x: -0.265, y: -1.9549999}
-      - {x: -0.195, y: -1.785}
-      - {x: -0.185, y: -1.665}
-      - {x: -0.105, y: -1.745}
-      - {x: 0.024999999, y: -1.7249999}
-      - {x: 0.044999998, y: -1.9449999}
-      - {x: 0.114999995, y: -2.095}
-      - {x: 0.24499999, y: -2.225}
-      - {x: 0.325, y: -2.2549999}
-      - {x: 0.49499997, y: -2.2549999}
-      - {x: 0.59499997, y: -2.145}
-      - {x: 0.615, y: -2.0249999}
-      - {x: 0.635, y: -1.925}
 --- !u!61 &1774207290
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6610,7 +6758,7 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
   m_Looping: 0
   m_WaitForFirstFrame: 1
