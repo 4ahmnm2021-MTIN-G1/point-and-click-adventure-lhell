@@ -15,7 +15,7 @@ public class InteractableObject2 : MonoBehaviour
     public UnityEvent conditionMet;
     public UnityEvent conditionNotMet;
 
-    public UnityEvent talk;
+    public UnityEvent talk2;
     
     //Erster Frame des Objektes in der Szene
     public void Start()
@@ -34,7 +34,7 @@ public class InteractableObject2 : MonoBehaviour
         commandMenu.active = true;
         commandMenu.transform.position = transform.position;
     
-       // ui_Manager2.activeIO = this;
+       ui_Manager2.activeIO = this;
 
     }
 

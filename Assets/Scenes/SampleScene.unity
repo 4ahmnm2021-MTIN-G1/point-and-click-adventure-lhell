@@ -1037,6 +1037,18 @@ MonoBehaviour:
           m_StringArgument: "Danke f\xFCr die Hilfe! Hier nimm das."
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1639545032}
+        m_MethodName: set_sprite
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 21300000, guid: 7226f1820df054a47a8aa631a98b29e6,
+            type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   conditionNotMet:
@@ -2255,6 +2267,7 @@ GameObject:
   - component: {fileID: 604963586}
   - component: {fileID: 604963584}
   - component: {fileID: 604963585}
+  - component: {fileID: 604963587}
   m_Layer: 5
   m_Name: RawImage
   m_TagString: Untagged
@@ -2271,7 +2284,7 @@ RectTransform:
   m_GameObject: {fileID: 604963582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.7007, y: 5.7007, z: 5.7007}
+  m_LocalScale: {x: 8.6348505, y: 8.6348505, z: 8.6348505}
   m_Children: []
   m_Father: {fileID: 767217984}
   m_RootOrder: 8
@@ -2298,7 +2311,7 @@ VideoPlayer:
   m_TargetMaterialRenderer: {fileID: 0}
   m_TargetMaterialProperty: _MainTex
   m_RenderMode: 2
-  m_AspectRatio: 0
+  m_AspectRatio: 2
   m_DataSource: 0
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
@@ -2350,6 +2363,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 604963582}
   m_CullTransparentMesh: 0
+--- !u!114 &604963587
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604963582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 961267d1ca96943cfbf19183a69aea90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 32900000, guid: 14fc08bc1dc164127ba1b2cda770438b, type: 3}
+  length: 0
+  image: {fileID: 604963585}
 --- !u!1 &613996373
 GameObject:
   m_ObjectHideFlags: 0
@@ -3195,7 +3223,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 2090873579}
+      - m_Target: {fileID: 604963584}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -3209,6 +3237,28 @@ MonoBehaviour:
       - m_Target: {fileID: 134931166}
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1540176023}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 604963587}
+        m_MethodName: DelayedFunction
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
