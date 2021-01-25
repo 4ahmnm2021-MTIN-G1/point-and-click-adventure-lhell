@@ -18,6 +18,6 @@ public class SceneManagerLoad : MonoBehaviour
 
     public void ReloadGame()
     {
-        SceneManager.LoadScene("StartSceneScreen");
+        SceneManager.LoadScene("StartScreenScene");
     }
 }
